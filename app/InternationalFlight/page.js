@@ -2,6 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import IranOutCover from "../../public/Covers/iranOut.png"
 import ProductBox from '../Components/maduleSection/MainCard/ProductBox'
+import CardContainer from '../Components/CardContainer/CardContainer'
 
 const IranOutPage = () => {
   return (
@@ -12,7 +13,9 @@ const IranOutPage = () => {
         alt="Picture of the author"
         priority={true}
       />
-      <ProductBox/>
+      <CardContainer>
+        <ProductBox />
+      </CardContainer>
     </div>
   )
 }

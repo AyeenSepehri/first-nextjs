@@ -2,6 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import TrainCover from "../../public/Covers/Train.png"
 import ProductBox from '../Components/maduleSection/MainCard/ProductBox'
+import CardContainer from '../Components/CardContainer/CardContainer'
 
 const TrainPage = () => {
   return (
@@ -12,7 +13,9 @@ const TrainPage = () => {
         alt="Picture of the author"
         priority={true}
       />
-      <ProductBox/>
+      <CardContainer>
+        <ProductBox />
+      </CardContainer>
     </div>
   )
 }
