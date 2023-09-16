@@ -1,6 +1,11 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
+import Providers from './GlobalRedux/provider'
+import ProductBox from './Components/maduleSection/MainCard/ProductBox'
+import NavBar from './Components/NavBar/NavBar'
+import localFont from 'next/font/local'
 
+const myFont = localFont({ src: './IRANSans.woff2' })
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
@@ -10,8 +15,23 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html  lang="fa" dir='rtl'>
+      <head>
+        <link
+          rel="icon"
+          href="/icon?<generated>"
+          type="image/<generated>"
+          sizes="<generated>"
+        />
+      </head>
+      <body className={inter.className}>
+        {/* <Providers>   */}
+       <main className={myFont.className}>
+       <NavBar/>
+        {children}
+       </main>
+        {/* </Providers> */}
+      </body>
     </html>
   )
 }
