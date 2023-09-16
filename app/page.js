@@ -24,7 +24,8 @@ export default function Home() {
         className="static"
       />
       <CardContainer>
-        <div className="divide-y-reverse divide-black">
+        <div className="flex flex-col divide-y-2 divide-black">
+        <div>
           <ProductBox  />
         </div>
         <form>
@@ -32,6 +33,7 @@ export default function Home() {
             <DropDown items={ticketStatus} />
           </div>
         </form>
+        </div>
       </CardContainer>
     </main>
   )

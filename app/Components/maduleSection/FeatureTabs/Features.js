@@ -11,7 +11,7 @@ const Features = () => {
     <div>
       <div className='flex justify-around'>
         <ul className='tab-link flex font-medium' >
-          <li className='p-5'>
+          <li className='p-5 divide-y-4 divide-cyan-800'>
             <Link className='block text-center mb-1' href="/">
               <Image className='block mx-auto mb-1' src="/svg/TabVectors/airplane.svg" height={35} width={35} />
               پرواز داخلی
@@ -49,7 +49,7 @@ const Features = () => {
               هتل
             </Link>
           </li>
-          {/* <li className='p-5'>ویلا و اقامتگاه</li> */}
+          <li className="tab-links-active" role="none" style={{transform: "translateX(-14.4px) scaleX(1.152)" ,visibility: "visible"}}></li>
         </ul>
       </div>
     </div>
