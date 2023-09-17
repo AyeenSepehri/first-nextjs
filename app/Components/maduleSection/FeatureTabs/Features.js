@@ -12,39 +12,38 @@ const Features = () => {
       <div className='flex justify-around'>
         <ul className='tab-link flex font-medium' >
           <li className='p-5 divide-y-4 divide-cyan-800'>
-            <Link className='block text-center mb-1' href="/">
+            <Link className={pathname == "/" ? "text-sky-500 block text-center mb-1 " : "block text-center mb-1"} href="/">
               <Image className='block mx-auto mb-1' src="/svg/TabVectors/airplane.svg" height={35} width={35} />
               پرواز داخلی
             </Link>
           </li>
           <li className='content-center p-5'>
-            <Link className={pathname == "/InternationalFlight" ? "bg-slate-600" : "block text-center mb-1"} href="/InternationalFlight">
+            <Link className={pathname == "/InternationalFlight" ? "text-sky-500" : "block text-center mb-1"} href="/InternationalFlight">
               <Image className='block mx-auto mb-1' src="/svg/TabVectors/airplanePlanet.svg" height={35} width={35} />
-              {/* <a className={router.pathname == "/InternationalFlight" ? "active" : ""}> */}
               پرواز خارجی
               {/* </a> */}
             </Link>
           </li>
           <li className='p-5'>
-            <Link className='block text-center mb-1' href="/Train">
+            <Link className={pathname == "/Train" ? "text-sky-500 block text-center mb-1 " : "block text-center mb-1"} href="/Train">
               <Image className='block mx-auto mb-1' src="/svg/TabVectors/train.svg" height={35} width={35} />
               قطار
             </Link>
           </li>
           <li className='p-5'>
-            <Link className='block text-center mb-1' href="/Bus">
+            <Link className={pathname == "/Bus" ? "text-sky-500 block text-center mb-1 " : "block text-center mb-1"} href="/Bus">
               <Image className='block mx-auto mb-1' src="/svg/TabVectors/bus.svg" height={35} width={35} />
               اتوبوس
             </Link>
           </li>
           <li className='p-5'>
-            <Link className='block text-center mb-1' href="/Tour">
+            <Link className={pathname == "/Tour" ? "text-sky-500 block text-center mb-1 " : "block text-center mb-1"} href="/Tour">
               <Image className='block mx-auto mb-1' src="/svg/TabVectors/tour.svg" height={35} width={35} />
               تور
             </Link>
           </li>
           <li className='p-5'>
-            <Link className='block text-center mb-1' href="/Hotel">
+            <Link className={pathname == "/Hotel" ? "text-sky-500 block text-center mb-1 " : "block text-center mb-1"} href="/Hotel">
               <Image className='block mx-auto mb-1' src="/svg/TabVectors/hotel.svg" height={35} width={35} />
               هتل
             </Link>
